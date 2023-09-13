@@ -1,0 +1,5 @@
+Problem Statement -1 : Given a binary tree, write a program that will return true if the binary tree is a mirror image of itself, and false if it is not. 
+
+Input:  Tree
+
+The correct output given this binary tree would be true because it is symmetrical else false.
