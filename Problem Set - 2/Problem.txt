@@ -1,0 +1,30 @@
+1. You are given with a connected and undirected simple graph with N vertices and M edges. Your task is to direct each edge in one of
+two possible directions in such a way that the indegrees of all vertices of the resulting graph are even. The indegree of a vertex is the number of edges directed to that vertex from another vertex. Find one possible way to direct them or determine that it is impossible under the given conditions. The graph on the input is connected, does not contain multiple
+edges or self-loops. 
+
+For each test case (Output):
+
+* If a valid way to direct the edges does not exist, print a single line
+containing one integer −1.
+* Otherwise, print a single line containing M space-separated integers.
+* For each valid i, the i-th of these integers should be 0 if edge i is directed from ui  to vi  or 1 if it is directed from vi to ui .
+
+Example Input
+4 4  N M
+1 2
+1 3
+2 4
+3 4 Output : 0 0 1 1
+3 3  N M
+1 2
+2 3
+1 3
+Output: -1
+
+
+2. There are a total n tasks you must pick, labelled from 0 to n-1. Some tasks may have pre-requisites and for example to pick task 0 you have to first pick task 1, which is expressed as a pair [0, 1]. Write a function bool canFinish(int tasks, int [][] prerequsites) that return true or false if it is possible for you to finish all tasks or not.
+
+Input: tasks = 2, pre-requsites = [ [0,1], [1,0] ]
+Output: False
+Input: tasks=3, pre-requsites = [ [1,0], [0,2] ]
+Output: True
